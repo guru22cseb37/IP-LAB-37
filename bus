@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sundaratravels </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: orange;
+        }
+        .header h1 {
+            font-size: 30px;
+            text-shadow: 2px 2px #000;
+        }
+        .login-link {
+            float: right;
+            margin-top: 10px;
+        }
+        .description {
+            padding: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+        .features {
+            margin: 20px;
+            border-collapse: collapse;
+        }
+        .features th, .features td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .features th {
+            background-color: goldenrod;
+        }
+        .fixed-image {
+            position: fixed;
+            top: 200px;
+            left: 20px;
+            cursor: pointer;
+        }
+        .booking-form {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: goldenrod;
+            display: none;
+        }
+        body{
+            background-color: whitesmoke;
+        }
+
+    </style>
+    <script>
+        function showLoginForm() {
+            document.getElementById('login-form').style.display = 'block';
+        }
+        function hideLoginForm() {
+            document.getElementById('login-form').style.display = 'none';
+        }
+        function showBookingForm() {
+            document.getElementById('booking-form').style.display = 'block';
+        }
+        function hideBookingForm() {
+            document.getElementById('booking-form').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="guru.png" alt="Sleeper Bus" width="300px">
+       
+
+        <h1>Guru Bus Booking</h1>
+        <a href="#" class="login-link" onclick="showLoginForm(); return false;">Signup/Login</a>
+    </div>
+    <div class="description">
+        <p>Welcome to our bus booking website. We offer a convenient and secure way to book bus tickets online. Choose from our wide range of bus services and make your travel plans hassle-free.</p>
+    </div>
+    <table class="features">
+        <tr>
+            <th>Service</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><img src="seaterbus.jpg" alt="Seater Bus" width="100"></td>
+            <td>Seater buses are the most common type of buses. They have a larger number of seats and are suitable for short to medium distance travel.</td>
+        </tr>
+        <tr>
+            <td><img src="sleeper.jpg" alt="Sleeper Bus" width="100"></td>
+            <td>Sleeper buses are designed for long distance travel. They have more comfortable and spacious seats that can be converted into a fully-fledged bed during the night.</td>
+        </tr>
+        <tr>
+            <td><img src="semisleeper.jpg" alt="Semi-Sleeper Bus" width="100"></td>
+            <td>Semi-sleeper buses are a combination of seater and sleeper buses. They have both types of seats, making them suitable for both short and long distance travel.</td>
+        </tr>
+    </table>
+    <div
